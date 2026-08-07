@@ -29,10 +29,6 @@ body {
 }
 
 main {
-    .cartao:hover .cartao-interno {
-        transform: rotateY(180deg);
-    }
-
     flex: 1;
 }
 
@@ -51,10 +47,6 @@ h1 {
     position: relative;
     transition: transform 0.8s;
 
-    .cartao:hover .cartao-interno {
-        transform: rotateY(180deg);
-    }
-
 }
 
 .cartao:hover .cartao-interno {
@@ -62,18 +54,19 @@ h1 {
 }
 
 .cartao-frente {
-position: absolute;
-border-radius 12px;
-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15)
-backface-visibility: hidden;
+    position: absolute;
+    border-radius 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    backface-visibility: hidden;
 }
+
 .cartao-verso {
     width: 100%;
     position: absolute;
     border-radius: 12px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     backface-visibility: hidden;
-}.cartao-verso 
-    transform: rotateY(180deg); 
-{
+    transform: rotateY(180deg);
+}
+
 
